@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F5415181729426700AD25DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5415171729426700AD25DF /* UIKit.framework */; };
+		1F54151A1729426700AD25DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5415191729426700AD25DF /* Foundation.framework */; };
+		1F54151C1729426700AD25DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F54151B1729426700AD25DF /* CoreGraphics.framework */; };
+		1F5415221729426800AD25DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F5415201729426800AD25DF /* InfoPlist.strings */; };
+		1F5415241729426800AD25DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5415231729426800AD25DF /* main.m */; };
+		1F5415281729426800AD25DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5415271729426800AD25DF /* AppDelegate.m */; };
+		1F54152A1729426800AD25DF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5415291729426800AD25DF /* Default.png */; };
+		1F54152C1729426800AD25DF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F54152B1729426800AD25DF /* Default@2x.png */; };
+		1F54152E1729426800AD25DF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F54152D1729426800AD25DF /* Default-568h@2x.png */; };
+		1F5415311729426800AD25DF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F54152F1729426800AD25DF /* MainStoryboard.storyboard */; };
+		1F5415341729426800AD25DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5415331729426800AD25DF /* ViewController.m */; };
+		1F54153D172942CC00AD25DF /* libMMMarkdown-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F54153B172942CC00AD25DF /* libMMMarkdown-iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F5415141729426700AD25DF /* NXVMarkdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NXVMarkdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5415171729426700AD25DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F5415191729426700AD25DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F54151B1729426700AD25DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1F54151F1729426800AD25DF /* NXVMarkdown-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NXVMarkdown-Info.plist"; sourceTree = "<group>"; };
+		1F5415211729426800AD25DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F5415231729426800AD25DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F5415251729426800AD25DF /* NXVMarkdown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NXVMarkdown-Prefix.pch"; sourceTree = "<group>"; };
+		1F5415261729426800AD25DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F5415271729426800AD25DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F5415291729426800AD25DF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1F54152B1729426800AD25DF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1F54152D1729426800AD25DF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1F5415301729426800AD25DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1F5415321729426800AD25DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F5415331729426800AD25DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F54153B172942CC00AD25DF /* libMMMarkdown-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libMMMarkdown-iOS.a"; sourceTree = "<group>"; };
+		1F54153C172942CC00AD25DF /* MMMarkdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMarkdown.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F5415111729426700AD25DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5415181729426700AD25DF /* UIKit.framework in Frameworks */,
+				1F54151A1729426700AD25DF /* Foundation.framework in Frameworks */,
+				1F54151C1729426700AD25DF /* CoreGraphics.framework in Frameworks */,
+				1F54153D172942CC00AD25DF /* libMMMarkdown-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F54150B1729426700AD25DF = {
+			isa = PBXGroup;
+			children = (
+				1F54153A172942CC00AD25DF /* MMMarkdown */,
+				1F54151D1729426700AD25DF /* NXVMarkdown */,
+				1F5415161729426700AD25DF /* Frameworks */,
+				1F5415151729426700AD25DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F5415151729426700AD25DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F5415141729426700AD25DF /* NXVMarkdown.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F5415161729426700AD25DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F5415171729426700AD25DF /* UIKit.framework */,
+				1F5415191729426700AD25DF /* Foundation.framework */,
+				1F54151B1729426700AD25DF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F54151D1729426700AD25DF /* NXVMarkdown */ = {
+			isa = PBXGroup;
+			children = (
+				1F5415261729426800AD25DF /* AppDelegate.h */,
+				1F5415271729426800AD25DF /* AppDelegate.m */,
+				1F54152F1729426800AD25DF /* MainStoryboard.storyboard */,
+				1F5415321729426800AD25DF /* ViewController.h */,
+				1F5415331729426800AD25DF /* ViewController.m */,
+				1F54151E1729426800AD25DF /* Supporting Files */,
+			);
+			path = NXVMarkdown;
+			sourceTree = "<group>";
+		};
+		1F54151E1729426800AD25DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F54151F1729426800AD25DF /* NXVMarkdown-Info.plist */,
+				1F5415201729426800AD25DF /* InfoPlist.strings */,
+				1F5415231729426800AD25DF /* main.m */,
+				1F5415251729426800AD25DF /* NXVMarkdown-Prefix.pch */,
+				1F5415291729426800AD25DF /* Default.png */,
+				1F54152B1729426800AD25DF /* Default@2x.png */,
+				1F54152D1729426800AD25DF /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F54153A172942CC00AD25DF /* MMMarkdown */ = {
+			isa = PBXGroup;
+			children = (
+				1F54153B172942CC00AD25DF /* libMMMarkdown-iOS.a */,
+				1F54153C172942CC00AD25DF /* MMMarkdown.h */,
+			);
+			name = MMMarkdown;
+			path = NXVMarkdown/Frameworks/MMMarkdown;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F5415131729426700AD25DF /* NXVMarkdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5415371729426800AD25DF /* Build configuration list for PBXNativeTarget "NXVMarkdown" */;
+			buildPhases = (
+				1F5415101729426700AD25DF /* Sources */,
+				1F5415111729426700AD25DF /* Frameworks */,
+				1F5415121729426700AD25DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NXVMarkdown;
+			productName = NXVMarkdown;
+			productReference = 1F5415141729426700AD25DF /* NXVMarkdown.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F54150C1729426700AD25DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Nguyen Xuan Vinh";
+			};
+			buildConfigurationList = 1F54150F1729426700AD25DF /* Build configuration list for PBXProject "NXVMarkdown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1F54150B1729426700AD25DF;
+			productRefGroup = 1F5415151729426700AD25DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F5415131729426700AD25DF /* NXVMarkdown */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F5415121729426700AD25DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5415221729426800AD25DF /* InfoPlist.strings in Resources */,
+				1F54152A1729426800AD25DF /* Default.png in Resources */,
+				1F54152C1729426800AD25DF /* Default@2x.png in Resources */,
+				1F54152E1729426800AD25DF /* Default-568h@2x.png in Resources */,
+				1F5415311729426800AD25DF /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F5415101729426700AD25DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5415241729426800AD25DF /* main.m in Sources */,
+				1F5415281729426800AD25DF /* AppDelegate.m in Sources */,
+				1F5415341729426800AD25DF /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F5415201729426800AD25DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F5415211729426800AD25DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1F54152F1729426800AD25DF /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F5415301729426800AD25DF /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F5415351729426800AD25DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F5415361729426800AD25DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F5415381729426800AD25DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NXVMarkdown/NXVMarkdown-Prefix.pch";
+				INFOPLIST_FILE = "NXVMarkdown/NXVMarkdown-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/NXVMarkdown/Frameworks/MMMarkdown\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1F5415391729426800AD25DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NXVMarkdown/NXVMarkdown-Prefix.pch";
+				INFOPLIST_FILE = "NXVMarkdown/NXVMarkdown-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/NXVMarkdown/Frameworks/MMMarkdown\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F54150F1729426700AD25DF /* Build configuration list for PBXProject "NXVMarkdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5415351729426800AD25DF /* Debug */,
+				1F5415361729426800AD25DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F5415371729426800AD25DF /* Build configuration list for PBXNativeTarget "NXVMarkdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5415381729426800AD25DF /* Debug */,
+				1F5415391729426800AD25DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F54150C1729426700AD25DF /* Project object */;
+}
