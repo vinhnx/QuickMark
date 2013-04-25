@@ -23,7 +23,6 @@
 #define kNavigationFontNameCondensedBold @"HelveticaNeue-CondensedBold"
 #define kNavigationFontSize 20
 
-
 @implementation AppDelegate
 
 
@@ -60,7 +59,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     [self customizedAppearance];
     return YES;
 }

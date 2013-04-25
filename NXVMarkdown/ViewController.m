@@ -21,9 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTap:)];
-    [[self view]addGestureRecognizer:tap];
 
     NSError *error;
 
@@ -40,6 +37,7 @@
     
     [_markdownView loadHTMLString:_html baseURL:nil];
     _markdownView.delegate = self;
+    
     NSLog(@"%@", _html);
 }
 
