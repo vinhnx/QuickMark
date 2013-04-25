@@ -8,11 +8,60 @@
 
 #import "AppDelegate.h"
 
+#define kTitleFontName @"HelveticaNeue"
+#define kTitleFontSize 15
+
+#define kBodyFontName @"HelveticaNeue-Light"
+#define kBodyFontSize 14
+
+#define kNavigationFontName @"HelveticaNeue-Light"
+#define kNavigationFontSize 20
+
+#define kNavigationFontNameBold @"HelveticaNeue-Bold"
+#define kNavigationFontSize 20
+
+#define kNavigationFontNameCondensedBold @"HelveticaNeue-CondensedBold"
+#define kNavigationFontSize 20
+
+
 @implementation AppDelegate
+
+
+- (void)customizedAppearance {
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:0.933 alpha:1.000]];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          [UIColor colorWithRed:0.286
+                                                                          green:0.277
+                                                                           blue:0.275
+                                                                          alpha:1.000], UITextAttributeTextColor,
+                                                          [UIFont fontWithName:kNavigationFontNameCondensedBold
+                                                                          size:kNavigationFontSize], UITextAttributeFont,
+                                                          [UIColor whiteColor], UITextAttributeTextShadowColor,
+                                                          [NSValue valueWithCGSize:CGSizeMake(0.0, 1.0)], UITextAttributeTextShadowOffset,
+                                                          nil]];
+    
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{
+                                UITextAttributeTextColor: [UIColor colorWithWhite:0.505
+                                                                            alpha:1.000],
+                          UITextAttributeTextShadowColor: [UIColor colorWithWhite:1.000
+                                                                            alpha:0.000]
+     }
+                                                forState:UIControlStateNormal];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{
+                                UITextAttributeTextColor: [UIColor colorWithWhite:0.112
+                                                                            alpha:1.000],
+                          UITextAttributeTextShadowColor: [UIColor colorWithWhite:1.000
+                                                                            alpha:0.000]
+     }
+                                                forState:UIControlStateHighlighted];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self customizedAppearance];
     return YES;
 }
 							

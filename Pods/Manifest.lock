@@ -1,0 +1,10 @@
+PODS:
+  - SVWebViewController (0.1)
+
+DEPENDENCIES:
+  - SVWebViewController
+
+SPEC CHECKSUMS:
+  SVWebViewController: 2e3a367237bb7072e54e05c6eaa82d21a12ba676
+
+COCOAPODS: 0.18.1

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F217419172962D000EABE33 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F217418172962D000EABE33 /* MessageUI.framework */; };
 		1F4CB76A172957C40077D4DB /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 1F4CB769172957C40077D4DB /* style.css */; };
 		1F5415181729426700AD25DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5415171729426700AD25DF /* UIKit.framework */; };
 		1F54151A1729426700AD25DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5415191729426700AD25DF /* Foundation.framework */; };
@@ -20,9 +21,11 @@
 		1F5415311729426800AD25DF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F54152F1729426800AD25DF /* MainStoryboard.storyboard */; };
 		1F5415341729426800AD25DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5415331729426800AD25DF /* ViewController.m */; };
 		1F54153D172942CC00AD25DF /* libMMMarkdown-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F54153B172942CC00AD25DF /* libMMMarkdown-iOS.a */; };
+		251232C9E2AB43A199286F89 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3567ABD50CA349C79AE75C46 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F217418172962D000EABE33 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		1F4CB769172957C40077D4DB /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		1F5415141729426700AD25DF /* NXVMarkdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NXVMarkdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5415171729426700AD25DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -42,6 +45,8 @@
 		1F5415331729426800AD25DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1F54153B172942CC00AD25DF /* libMMMarkdown-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libMMMarkdown-iOS.a"; sourceTree = "<group>"; };
 		1F54153C172942CC00AD25DF /* MMMarkdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMarkdown.h; sourceTree = "<group>"; };
+		3567ABD50CA349C79AE75C46 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E3DA65845742D285B32D21 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,10 +54,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F217419172962D000EABE33 /* MessageUI.framework in Frameworks */,
 				1F5415181729426700AD25DF /* UIKit.framework in Frameworks */,
 				1F54151A1729426700AD25DF /* Foundation.framework in Frameworks */,
 				1F54151C1729426700AD25DF /* CoreGraphics.framework in Frameworks */,
 				1F54153D172942CC00AD25DF /* libMMMarkdown-iOS.a in Frameworks */,
+				251232C9E2AB43A199286F89 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +73,7 @@
 				1F54151D1729426700AD25DF /* NXVMarkdown */,
 				1F5415161729426700AD25DF /* Frameworks */,
 				1F5415151729426700AD25DF /* Products */,
+				84E3DA65845742D285B32D21 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,9 +88,11 @@
 		1F5415161729426700AD25DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F217418172962D000EABE33 /* MessageUI.framework */,
 				1F5415171729426700AD25DF /* UIKit.framework */,
 				1F5415191729426700AD25DF /* Foundation.framework */,
 				1F54151B1729426700AD25DF /* CoreGraphics.framework */,
+				3567ABD50CA349C79AE75C46 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F5415371729426800AD25DF /* Build configuration list for PBXNativeTarget "NXVMarkdown" */;
 			buildPhases = (
+				FAD4CB08F5E848D3834664AC /* Check Pods Manifest.lock */,
 				1F5415101729426700AD25DF /* Sources */,
 				1F5415111729426700AD25DF /* Frameworks */,
 				1F5415121729426700AD25DF /* Resources */,
+				8438E35A5AF24A819E2E63E5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,6 +198,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8438E35A5AF24A819E2E63E5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		FAD4CB08F5E848D3834664AC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F5415101729426700AD25DF /* Sources */ = {
@@ -278,6 +321,7 @@
 		};
 		1F5415381729426800AD25DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E3DA65845742D285B32D21 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NXVMarkdown/NXVMarkdown-Prefix.pch";
@@ -293,6 +337,7 @@
 		};
 		1F5415391729426800AD25DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E3DA65845742D285B32D21 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NXVMarkdown/NXVMarkdown-Prefix.pch";
