@@ -19,19 +19,20 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+        
     NSError *error;
-
+    
     NSString *markdown = @"# Example\nWhat a *library*! **this** is a [link](http://google.com/)\nAnd cat :3\n\n![cat](http://placekitten.com/g/290/250)\n\nSee *log* for ouput html";
-
+    
     _html = [[NSMutableString alloc] init];
     [_html appendString:[NSString stringWithFormat:@"<html>"
-                        "<head>"
-                        "  <meta charset='UTF-8'/>"
-                        "  <style>%@</style>"
-                        "</head>", [self css]]];
+                         "<head>"
+                         "  <meta charset='UTF-8'/>"
+                         "  <style>%@</style>"
+                         "</head>", [self css]]];
     
     [_html appendString:[MMMarkdown HTMLStringWithMarkdown:markdown error:&error]];
     
@@ -39,11 +40,16 @@
     _markdownView.delegate = self;
     
     NSLog(@"%@", _html);
+
 }
 
--(BOOL) webView:(UIWebView *)inWeb shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inType {
-    if ( inType == UIWebViewNavigationTypeLinkClicked ) {
-        SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress:[NSString stringWithFormat:@"%@", [inRequest URL]]];
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    if ( navigationType == UIWebViewNavigationTypeLinkClicked ) {
+        SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress:[NSString stringWithFormat:@"%@", [request URL]]];
         webViewController.barsTintColor             = [UIColor colorWithWhite:0.933 alpha:1.000];
         [webViewController.toolbar setTintColor:[UIColor colorWithWhite:0.122 alpha:1.000]];
         [self presentViewController:webViewController animated:YES completion:NULL];
