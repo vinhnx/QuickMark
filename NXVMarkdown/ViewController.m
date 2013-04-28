@@ -25,8 +25,6 @@
         
     NSError *error;
     
-    NSString *markdown = @"# Example\nWhat a *library*! **this** is a [link](http://google.com/)\nAnd cat :3\n\n![cat](http://placekitten.com/g/290/250)\n\nSee *log* for ouput html";
-    
     _html = [[NSMutableString alloc] init];
     [_html appendString:[NSString stringWithFormat:@"<html>"
                          "<head>"
@@ -34,7 +32,7 @@
                          "  <style>%@</style>"
                          "</head>", [self css]]];
     
-    [_html appendString:[MMMarkdown HTMLStringWithMarkdown:markdown error:&error]];
+    [_html appendString:[MMMarkdown HTMLStringWithMarkdown:[self markdownString] error:&error]];
     
     [_markdownView loadHTMLString:_html baseURL:nil];
     _markdownView.delegate = self;
@@ -74,6 +72,23 @@
 
     return cssString;
 }
+
+- (NSString *)markdownString {
+    NSError *error = nil;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"foo" ofType:@"md"];
+    NSString *markdownString = [NSString stringWithContentsOfFile:filePath
+                                                    encoding:NSUTF8StringEncoding
+                                                       error:&error];
+    
+    if (error != nil) {
+        NSLog(@"Error: %@", error);
+        
+        return nil;
+    }
+    
+    return markdownString;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

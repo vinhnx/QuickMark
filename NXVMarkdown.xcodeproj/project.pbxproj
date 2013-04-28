@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F10C5D6172CD9AD00722BF9 /* foo.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F10C5D5172CD9AD00722BF9 /* foo.md */; };
 		1F217419172962D000EABE33 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F217418172962D000EABE33 /* MessageUI.framework */; };
 		1F4CB76A172957C40077D4DB /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 1F4CB769172957C40077D4DB /* style.css */; };
 		1F5415181729426700AD25DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5415171729426700AD25DF /* UIKit.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F10C5D5172CD9AD00722BF9 /* foo.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = foo.md; sourceTree = "<group>"; };
 		1F217418172962D000EABE33 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		1F4CB769172957C40077D4DB /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		1F5415141729426700AD25DF /* NXVMarkdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NXVMarkdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +107,6 @@
 				1F54152F1729426800AD25DF /* MainStoryboard.storyboard */,
 				1F5415321729426800AD25DF /* ViewController.h */,
 				1F5415331729426800AD25DF /* ViewController.m */,
-				1F4CB769172957C40077D4DB /* style.css */,
 				1F54151E1729426800AD25DF /* Supporting Files */,
 			);
 			path = NXVMarkdown;
@@ -121,6 +122,8 @@
 				1F5415291729426800AD25DF /* Default.png */,
 				1F54152B1729426800AD25DF /* Default@2x.png */,
 				1F54152D1729426800AD25DF /* Default-568h@2x.png */,
+				1F4CB769172957C40077D4DB /* style.css */,
+				1F10C5D5172CD9AD00722BF9 /* foo.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				1F54152E1729426800AD25DF /* Default-568h@2x.png in Resources */,
 				1F5415311729426800AD25DF /* MainStoryboard.storyboard in Resources */,
 				1F4CB76A172957C40077D4DB /* style.css in Resources */,
+				1F10C5D6172CD9AD00722BF9 /* foo.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
